@@ -1,9 +1,14 @@
 import { useState } from 'react'
+import { Shape3D } from './Shape3D'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  const cube = new Shape3D("cube", 30, 30, 30);
+
+  console.log( cube.shoutout() );
+  console.log( cube.superShout() );
   const [count, setCount] = useState(0)
 
   return (
